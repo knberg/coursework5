@@ -1,0 +1,404 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 56px;
+    background-color: #252525;
+    color: #fff;
+}
+
+main {
+    min-height: 100vh;
+}
+
+.navbar-brand {
+    font-size: 22px;
+    color: #fff !important;
+}
+
+.menu-link {
+    color: #fff !important;
+    font-size: 16px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 30px;
+}
+
+.carousel-inner {
+    height: 50vh;
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item {
+    height: 50vh;
+}
+
+.page-title {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to bottom, transparent, #000);
+}
+
+.card {
+    background-color: #333;
+    color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-info {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to bottom, transparent, #000);
+    transition: opacity 0.3s;
+}
+
+.cinema-btn {
+    background: #d53b3b;
+    color: #fff;
+}
+
+.banner-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card .movie-title {
+    font-size: 16px;
+    margin: 0;
+}
+
+.card .movie-genre {
+    font-size: 12px;
+    margin: 0;
+}
+
+footer {
+    background-color: #1c1c1c;
+    padding: 20px 0;
+    color: #fff;
+}
+
+footer h4 {
+    font-size: 18px;
+    display: inline-block;
+    border-bottom: 2px solid #d53b3b;
+    margin-bottom: 10px;
+    padding-bottom: 10px
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.bg-black {
+    background: #161616;
+}
+
+.copyright {
+    background: #000;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#modal {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    border: 1px solid #555;
+}
+
+#tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.tab-btn {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.tab-btn:hover {
+    background-color: #555;
+}
+
+#registration-form {
+    display: none;
+}
+
+.form-input {
+    width: 100%;
+    background: #333;
+    border: 1px solid #555;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.cinema-btn {
+    background-color: #e13131;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.movie-title {
+    margin-bottom: 10px;
+}
+
+.movie-about {
+    margin-bottom: 10px;
+}
+
+.movie-description {
+    color: #d7d7d7;
+    max-width: 700px;
+}
+
+.movie-info {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.movie-poster {
+    width: 300px;
+    margin-right: 30px;
+}
+
+.movie-poster img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.movie-properties {
+    margin-bottom: 15px;
+    color: #d7d7d7;
+}
+
+.movie-details-item {
+    margin-bottom: 5px;
+}
+
+.movie-details-item .property {
+    width: 180px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.movie-trailer-link {
+    color: #d53b3b;
+    text-decoration: none;
+}
+
+#date-selector {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#session-date {
+    padding: 0 10px;
+    background: #555;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.hall {
+    padding: 20px 0;
+    border-top: 1px solid #ababab;
+}
+
+.hall-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hall-info .hall-name {
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+    margin-right: 10px;
+}
+
+.hall-info .hall-type {
+    font-size: 16px;
+    display: block;
+    padding: 10;
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: 60px;
+    text-align: center;
+}
+
+.session-picker {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(77, 0, 0);
+    background: #ea3030;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+a.disabled {
+    pointer-events: none;
+}
+
+.disabled .session-picker {
+    border: 1px solid gray;
+    background: #555;
+}
+
+.session-picker:hover {
+    border: 1px solid #fff;
+}
+
+.boba {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#session-info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#session-info span {
+    font-weight: bold;
+}
+
+#booking-info {
+    display: flex;
+    align-items: center;
+}
+
+#hall-map {
+    border-collapse: collapse;
+    margin: 50px 0;
+}
+
+#hall-map th, td {
+    border: none;
+    padding: 5px;
+    text-align: center;
+}
+
+#hall-map .seat {
+    width: 40px;
+    height: 40px;
+    background-color: #454545;
+    border: 1px solid #808080;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.seat.reserved {
+    pointer-events: none;
+    filter: brightness(0.5);
+}
+
+#hall-map .seat.selected {
+    background-color: #ea3030;
+}
+
+#warning,
+#total {
+    margin: 0 30px;
+    font-size: 20px;
+}
+
+.final {
+    font-size: 24px;
+    font-weight: bold;
+}
